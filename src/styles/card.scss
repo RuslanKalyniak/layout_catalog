@@ -1,14 +1,11 @@
 .card {
-  @include center;
-  flex-direction: column;
+  display: grid;
+  grid-template-rows: repeat(auto-fit, 1fr);
+  align-items: center;
   width: 200px;
   border: 1px solid #f3f3f3;
   border-radius: 5px;
   padding: 15px 14px;
-
-  &--position {
-    margin: 0 24px 50px;
-  }
 
   &__avatar {
     width: 166px;
@@ -23,11 +20,6 @@
       border-color: #f3f3f3;
       transform: scale(1.2);
     }
-  }
-
-  &__content {
-    flex-direction: row;
-    justify-content: flex-start;
   }
 
   &__title {
@@ -45,7 +37,8 @@
   }
 
   &__info {
-    @include center;
+    display: flex;
+    align-items: center;
     justify-content: space-between;
     
     &--vote {

@@ -2,24 +2,15 @@
   background-color: #fff;
 
   &__list {
-    display: flex;
-    flex-direction: row;
-    margin: 0;
-    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(8, max-content);
+    align-self: center;
+    gap: 20px;
     width: 100%;
     list-style: none;
   }
 
-  &__item {
-    margin-right: 20px;
-  }
-
-  &__item:last-child {
-    margin-right: 0;
-  }
-
   &__link {
-    display: inline-block;
     position: relative;
     padding: 23px 0;
     text-decoration: none;
@@ -41,7 +32,7 @@
 
   .is-active::after {
     content: "";
-    display: block;
+    display: grid;
     position: absolute;
     width: 100%;
     bottom: 0;

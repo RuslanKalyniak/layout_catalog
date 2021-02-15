@@ -1,5 +1,7 @@
 .stars {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 4px;
   list-style: none;
   margin: 0;
   padding: 0;
@@ -8,7 +10,6 @@
     background: url("../images/star.svg") no-repeat center;
     width: 15px;
     height: 15px;
-    margin-right: 4px;
   }
 
   &__item--active {
