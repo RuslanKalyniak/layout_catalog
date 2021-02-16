@@ -15,7 +15,7 @@
     transition: 1s;
 
     &:hover {
-      border: 3px solid #f3f3f3;
+      border-color: #f3f3f3;
       transform: scale(1.2);
     }
   }
@@ -68,10 +68,10 @@
 
   &__btn-buy {
     display: inline-block;
-    background-color: #00acdc;
+    background-color: $colorActive;
     color: white;
     padding: 10px 0;
-    border: 1px solid #00acdc;
+    border: 1px solid $colorActive;
     border-radius: 5px;
     text-align: center;
     text-transform: uppercase;
@@ -85,7 +85,7 @@
 
     &:hover {
       background-color: white;
-      color: #00acdc;
+      color: $colorActive;
     }
   }
 }
