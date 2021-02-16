@@ -1,18 +1,16 @@
 .stars {
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  gap: 4px;
-  list-style: none;
-  margin: 0;
-  padding: 0;
+  grid-template-columns: repeat(5, 15px);
+  grid-gap: 0 4px;
+}
 
-  &__item {
-    background: url("../images/star.svg") no-repeat center;
-    width: 15px;
-    height: 15px;
-  }
+.star {
+  width: 15px;
+  height: 15px;
+  background: url(../images/star-active.svg) no-repeat center;
+  margin-right: 4px;
 
-  &__item--active {
-    background: url("../images/star-active.svg") no-repeat center;
+  &:last-child {
+    background: url(../images/star.svg) no-repeat center;
   }
 }

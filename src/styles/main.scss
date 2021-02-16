@@ -1,14 +1,11 @@
 .main {
   display: grid;
-  justify-content: center;
+  grid-template-columns: repeat(auto-fit, 230px);
+  justify-content: space-between;
   justify-items: center;
-  align-items: center;
-  grid-template-columns: repeat(4, 200px);
-  margin: 0 auto;
-  grid-gap: 48px;
-
-  @media screen and (min-width: 1200px) {
-    max-width: 1200px;
-    padding: 0 104px;
-  }
+  grid-gap: 5px;
+  padding: 0 25px 50px;
+  width: 100%;
+  max-width: 1024px;
+  margin: 50px auto 0;
 }
