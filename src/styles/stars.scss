@@ -1,17 +1,17 @@
-//$active-stars : 4;
+$activeStarsProduct : 4;
 
 .stars {
   display: grid;
   grid-template-columns: repeat(5, 15px);
   gap: 0 4px;
-}
 
-.star {
-  width: 15px;
-  height: 15px;
-  background: url(../images/star.svg) no-repeat center;
-}
+  &__star {
+    width: 15px;
+    height: 15px;
+    background: url(../images/star.svg) no-repeat center;
 
-.star:nth-child(-n+4) {
-  background: url(../images/star-active.svg) no-repeat center;
+    &:nth-child(-n+#{$activeStarsProduct}) {
+      background: url(../images/star-active.svg) no-repeat center;
+    }
+  }
 }
