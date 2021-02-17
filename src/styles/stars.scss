@@ -1,3 +1,5 @@
+//$active-stars : 4;
+
 .stars {
   display: grid;
   grid-template-columns: repeat(5, 15px);
@@ -7,9 +9,9 @@
 .star {
   width: 15px;
   height: 15px;
-  background: url(../images/star-active.svg) no-repeat center;
+  background: url(../images/star.svg) no-repeat center;
+}
 
-  &:last-child {
-    background: url(../images/star.svg) no-repeat center;
-  }
+.star:nth-child(-n+4) {
+  background: url(../images/star-active.svg) no-repeat center;
 }
